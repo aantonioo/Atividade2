@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula01 - Flexbox</title>
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; 
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        header {
+            background: linear-gradient(to bottom, #333, #444); 
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+       
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 20px; 
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px; 
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px; 
+            background-color: #00A97F; 
+            border-radius: 25px; 
+            font-weight: bold; 
+            transition: background-color 0.3s, transform 0.2s; 
+        }
+
+        nav a:hover {
+            background-color: #00916E; 
+            transform: scale(1.05); 
+        }
+
+        
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px; 
+            padding: 20px;
+            margin: 10px;
+            flex-basis: calc(33.33% - 20px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 1.8rem; 
+            margin-bottom: 10px; 
+            color: #333; 
+        }
+
+        
+        section p {
+            font-size: 1.2rem; 
+            color: #666; 
+        }
+
+        
+        footer {
+            background: linear-gradient(to top, #333, #444);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <header>
+        <h1>Aula01 - Meu Layout Flexbox</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Seção 1</h2>
+            <p>Conteúdo da seção 1.</p>
+        </section>
+        <section>
+            <h2>Seção 2</h2>
+            <p>Conteúdo da seção 2.</p>
+        </section>
+        <section>
+            <h2>Seção 3</h2>
+            <p>Conteúdo da seção 3.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Rodapé da página.</p>
+    </footer>
+    
+</body>
+</html>
